@@ -43,6 +43,11 @@
     const response = await fetch("https://formtpi-backend.vercel.app/utente");
     dati = await response.json();
   }
+
+ import {onMount} from 'svelte';
+
+  onMount(() => {
+    getDati();
 </script>
 
 <h1>Benvenuto {nome}</h1>
