@@ -6,9 +6,9 @@
 
 
     async function getDati() {
-        const response = await fetch('http://localhost:3080/utente');
-        dati = await response.json();
-    }
+    const response = await fetch("https://formtpi-backend.vercel.app/utente");
+    dati = await response.json();
+  }
 
    
 
