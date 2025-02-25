@@ -14,7 +14,7 @@
     event.preventDefault();
     //alert(`Ciao ${nome}`);
     try {
-      const res = await fetch("http://localhost:3080/utente", {
+      const res = await fetch("https://formtpi-backend.vercel.app/utente", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@
   }
 
   async function getDati() {
-    const response = await fetch("http://localhost:3080/utente");
+    const response = await fetch("https://formtpi-backend.vercel.app/utente");
     dati = await response.json();
   }
 </script>
